@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatibsle" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="DB.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="quizzy.css">
+</head>
+<body>
+    <h1><section id="que" > </section></h1>
+    <h2><div class="dhaba" id="opt1" onclick = "selected_option=1; changeColors(this, 1);"><br> </div></h2>
+    <h2><div class="dhaba" id="opt2" onclick = " selected_option=2; changeColors(this, 2);"><br></div></h2>
+    <h2><div class="dhaba" id="opt3" onclick = " selected_option=3; changeColors(this, 3);"><br></div></h2>
+    <h2><div class="dhaba" id="opt4" onclick = " selected_option=4; changeColors(this, 4);"><br> </div></h2>
+    <h3 id = "timer">00:00</h1>
+    <button type="button" value="next" title="next" id="next" onclick = "on_click_next()" >Next</button>
+    <script src="quiz.js"></script>
+</body>
+</html>

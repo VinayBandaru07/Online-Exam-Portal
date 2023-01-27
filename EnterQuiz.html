@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: plum;
+        }
+        *{
+            border-radius: 0.5vw;
+        }
+        input{
+            min-height: 3vw;
+            max-lines: 4;
+        }
+        textarea{
+            width: 40vw;
+            height: 5vw;
+            min-width: 40vw;
+            min-height: 5vw;
+        }
+        #que{
+            height: 8vw;
+            min-height: 8vw;
+        }
+        #next{
+            width:20vw;
+        }
+        button{
+            margin-top: 3vw;
+            padding: 0.6vw;
+        }
+        #left{
+            float: left;
+            margin-left: 1vw;
+            margin-top: 1vw;
+        }
+        #right{
+            float: right;
+            margin-top: 5vw;
+            margin-right: 5vw;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <table align="center" id="right">
+        <tr><td>Name<td><input type="text" id="name"></tr><td>Timer(sec)<td><input type="number" id="timer"></tr>
+    </table>
+    
+    <table align="center" id="left">
+        <caption>Make a Test</caption>
+        <tr><td>Question</td><td><textarea type="text" id="que"></textarea></td></tr>
+        <tr><td>Option 1</td><td><textarea type="text" id="opt1"></textarea></td><td><input type="radio" name="hi" checked = "true"></td></tr>
+        <tr><td>Option 2</td><td><textarea type="text" id="opt2"></textarea></td><td><input type="radio" name="hi"></td></tr>
+        <tr><td>Option 3</td><td><textarea type="text" id="opt3"></textarea></td><td><input type="radio" name="hi"></td></tr>
+        <tr><td>Option 4</td><td><textarea type="text" id="opt4"></textarea></td><td><input type="radio" name="hi"></td></tr>
+        <tr><td>Description</td><td><textarea type="text" id="desc"></textarea></td></tr>
+        <tr><td><button id="save" onclick="parseObj()">SAVE</button></td><td align="center"><button id="next" onclick="checkText()">NEXT</button></td></tr>
+    </table>
+    <script src="EnterQuiz.js"></script>
+</body>
+</html>
