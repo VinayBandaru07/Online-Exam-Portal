@@ -76,7 +76,7 @@ function parseObj(){
         my_obj['timer'] = timer_view.value
         localStorage.setItem("Papers" + name_view.value, JSON.stringify(my_obj))
         alert(JSON.stringify(my_obj))
-        window.location.href = "teacher.html"
+        window.location.href = "../html/teacher.html"
         // alert("Papers" + my_obj.name)
     }
 

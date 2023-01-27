@@ -50,7 +50,7 @@ function on_click_next(){
     if(index+1 == randomList.length){
         storageItem[eval(randomList[index])]['sol'] = selectedAnswer
         localStorage.setItem(keyArray[currentPortal], JSON.stringify(storageItem))
-        window.location.href = "Result.html"
+        window.location.href = "../html/Result.html"
     }
     storageItem[eval(randomList[index])]['sol'] = selectedAnswer
     selectedAnswer = 0
@@ -97,7 +97,7 @@ document.addEventListener("visibilitychange", (event) => {
     if (document.visibilityState == "visible") {
         console.log("Hello")
     } else {
-        window.location.href = "Alert.html"
+        window.location.href = "../html/Alert.html"
 
     }
   });

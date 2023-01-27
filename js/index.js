@@ -8,7 +8,7 @@ window.history.forward()
 
 function emp_login(){
     if(check_emp_details()){
-        window.location.href = "teacher.html"
+        window.location.href = "./html/teacher.html"
     }
     else{
         alert("Enter correct Details")
@@ -22,7 +22,7 @@ function st_login(){
             return
         }
         localStorage.setItem('ActiveUser', st_roll)
-        window.location.href = "quizzy.html"
+        window.location.href = "./html/quizzy.html"
     }
     else{
         alert("Enter correct Details")
